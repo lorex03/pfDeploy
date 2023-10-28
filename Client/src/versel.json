@@ -1,0 +1,24 @@
+{
+    "rewrites": [
+        {"source": "/", "destination": "/"},
+        {"source": "/login", "destination": "/login"},
+        {"source": "/create", "destination": "/create"},
+        {"source": "/detail/:id", "destination": "/detail/:id"},
+        {"source": "/signUp", "destination": "/signUp"},
+        {"source": "/error404", "destination": "/error404"},
+        {"source": "/detail/reservations/:id", "destination": "/detail/reservations/:id"},
+        {"source": "/postUser", "destination": "/postUser"},
+        {"source": "/checkout", "destination": "/checkout"},
+        {"source": "/gestionUser", "destination": "/gestionUser"},
+        {"source": "/admin", "destination": "/admin"},
+        {"source": "/admin/properties", "destination": "/admin/properties"},
+        {"source": "/admin/property/:id", "destination": "/admin/property/:id"},
+        {"source": "/admin/users", "destination": "/admin/users"},
+        {"source": "/paymentEdit", "destination": "/paymentEdit"},
+        {"source": "/saved", "destination": "/saved"},
+        {"source": "/reviews/:id", "destination": "/reviews/:id"},
+        {"source": "/bookings", "destination": "/bookings"},
+        {"source": "/about", "destination": "/about"},
+        {"source": "/(.*)", "destination": "/"}
+    ]
+}
