@@ -27,7 +27,7 @@ import axios from 'axios';
 import About from './components/About/About';
 
 // axios.defaults.baseURL = 'http://localhost:3001';
-axios.defaults.baseURL = "https://pfpruebadl-production.up.railway.app";
+axios.defaults.baseURL = "https://inmuebles360-production.up.railway.app";
 
 function App() {
 	const location = useLocation();
