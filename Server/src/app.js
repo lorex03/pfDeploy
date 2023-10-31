@@ -23,7 +23,7 @@ const storage = multer.memoryStorage(); // Almacenamiento en memoria (puedes cam
 const server = express();
 const corsOptions = {
 	
-	origin: "https://inmuebles360.vercel.app", // Permite solicitudes desde este origen
+	origin: "*", // LUEGP RUTA VERCEEL  Permite solicitudes desde este origen
 	methods: 'GET, POST, OPTIONS, PUT, DELETE',
 	allowedHeaders: 'Origin, X-Requested-With, Content-Type, Accept', // Solo permite estos encabezados
 	credentials: true, // Permite enviar cookies
@@ -93,7 +93,7 @@ server.post('/api/checkout', async (req, res) => {
 			description: '',
 			payment_method: id,
 			confirm: true,
-			return_url: 'https://inmuebles360.vercel.app',
+		return_url: 'http://localhost:5173', 	// ' https://inmuebles360.vercel.app'
 		});
 
 		res.status(200).send();

@@ -15,9 +15,7 @@ import {
 } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 
-const stripePromise = loadStripe(
-	"pk_test_51O05j9I6gYqlkFFnCH6Jn4JTYyyzAGAZ8fZk2KDKUGzwTTMQ20XhGGuGp7DnkOXLPESmkC5PGBoxHO9MyMyS8KOZ00ld8wpuns"
-);
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
 
 const CheckoutForm = ({ totalAmount }) => {
 	const user = useSelector((state) => state.user);
@@ -39,7 +37,7 @@ const CheckoutForm = ({ totalAmount }) => {
 			const { id } = paymentMethod;
 
 			try {
-				const { status } = await axios.post("https://inmobiliaria360.up.railway.app/api/checkout", {
+				const { status } = await axios.post("/api/checkout", {
 					id,
 					amount: totalAmount * 100,
 				});

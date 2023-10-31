@@ -26,8 +26,8 @@ import Bookings from "./views/MyBookings/MyBookings";
 import axios from 'axios';
 import About from './components/About/About';
 
-// axios.defaults.baseURL = 'http://localhost:3001';
-axios.defaults.baseURL = "https://inmobiliaria360.up.railway.app";
+ axios.defaults.baseURL = 'http://localhost:3001';
+//axios.defaults.baseURL = "https://inmobiliaria360.up.railway.app";
 
 function App() {
 	const location = useLocation();
