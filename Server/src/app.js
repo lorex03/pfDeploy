@@ -43,7 +43,7 @@ server.use((req, res, next) => {
 	console.log('Cookies que llegan:', req.cookies);
 	next(); // Continúa con la ejecución de la solicitud
 });
-
+  
 //CONFIG DE EXPRESS-SESSION
 server.use(
 	session({
