@@ -43,6 +43,7 @@ const CheckoutForm = ({ totalAmount, setProcessing }) => {
 			type: "card",
 			card: elements.getElement(CardElement),
 		});
+		
 		if (!error) {
 			const { id } = paymentMethod;
 
