@@ -25,6 +25,7 @@ const CheckoutForm = ({ totalAmount }) => {
 	const [showModal, setShowModal] = useState(false);
 	const [showModalLoading, setShowModalLoading] = useState(false);
 	const [error, setError] = useState(false);
+//que ME TOME COMO CADENA DE TEXTO, EL API KEY 
 
 	const handleSubmit = async (event) => {
 		event.preventDefault();
