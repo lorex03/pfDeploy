@@ -15,7 +15,7 @@ import {
 } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
+const stripePromise = loadStripe("pk_test_51O6kJQDPb1shHU4m4biwzWL62bMptJtLFfdhQqzPVr0DFzd8bH0eGxMv0NkcVnWYKJLvhf8e0vcSVQPhfIYdFiQc00xgeGgbjr");
 
 const CheckoutForm = ({ totalAmount, setProcessing }) => {
 	const user = useSelector((state) => state.user);
