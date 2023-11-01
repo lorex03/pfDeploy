@@ -8,7 +8,7 @@ const routes = require('./routes/index');
 require('./scheduled tasks/sendEmailAtTheEndOfTheReservation.js')
 const Stripe = require('stripe');
 
-const stripe = new Stripe(process.env.API_KEY_STRIPE); 
+const stripe = new Stripe("sk_test_51O05j9I6gYqlkFFnEkk1fzSb8hBEk6QfxsT5fZAQuzjpfIOSX5Q8hSELdLNW9kPUAgynrkV99oymz6EgMudEQ6ff00y3IGIkeR"); 
 
 const passport = require('passport'); //La biblioteca de autenticación para Node.js.
 require('../middlewares/authLocal');
