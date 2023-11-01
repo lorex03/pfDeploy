@@ -38,12 +38,16 @@ const CheckoutForm = ({ totalAmount, setProcessing }) => {
 			setShowErrorModal(true);
 			
 		  }
-	  
+		  console.log("Datos de la tarjeta:", elements.getElement(CardElement));
+
 		const { error, paymentMethod } = await stripe.createPaymentMethod({
 			type: "card",
 			card: elements.getElement(CardElement),
 		});
 		
+		console.log("Error de Stripe:", error);
+  console.log("Payment Method de Stripe:", paymentMethod);
+
 		if (!error) {
 			const { id } = paymentMethod;
 
