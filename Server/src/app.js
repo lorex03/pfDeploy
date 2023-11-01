@@ -7,7 +7,7 @@ const morgan = require('morgan');
 const routes = require('./routes/index');
 require('./scheduled tasks/sendEmailAtTheEndOfTheReservation.js')
 const Stripe = require('stripe');
-
+//saqueee api key de server Q ONDAA
 const stripe = new Stripe(process.env.API_KEY_STRIPE); 
 
 const passport = require('passport'); //La biblioteca de autenticación para Node.js.
