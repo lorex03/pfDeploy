@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import Success from "../PaymentForm/PaymentSuccessful";
 import Loading from "./Loading";
 import { FadeLoader } from "react-spinners";
-
+//agregue las comillas de la api key del punto env backend"
 import {
 	Elements,
 	CardElement,
